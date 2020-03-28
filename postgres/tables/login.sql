@@ -1,0 +1,9 @@
+BEGIN TRANSACTION;
+
+CREATE TABLE login (
+  id serial PRiMARY KEY,
+  name VARCHAR(100),
+  email text UNIQUE NOT NULL
+);
+
+COMMIT;
